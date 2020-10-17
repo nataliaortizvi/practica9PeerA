@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button imgSandia, imgPapas, imgQbano, imgPerro;
     UDPConnection udp;
-    int num= 1,y=70;
+    int num= 1,y=65;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -62,8 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 udp.sendMessage(json1);
 
-
-
                 break;
             case R.id.imgPapas:
 
@@ -81,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 num +=1;
                 y += 150;
-
 
                 break;
             case R.id.imgQbano:
